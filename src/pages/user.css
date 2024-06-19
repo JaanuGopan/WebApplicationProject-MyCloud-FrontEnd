@@ -1,0 +1,163 @@
+.userbackground {
+  background-image: url("../assets/iStock-1388013584-1-scaled.webp"); /* Replace with the path to your image */
+  background-size: cover; /* Adjust to your needs */
+  background-position: center; /* Adjust to your needs */
+  /* Other background properties can be added here */
+  background-size: cover;
+  height: 700px;
+  display: flexbox;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  filter: brightness(0.97);
+}
+table {
+  width: 100%;
+}
+
+.container {
+  background-color: rgba(8, 35, 87, 0.2);
+  border-radius: 15px;
+  backdrop-filter: blur(3px);
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+table,
+th,
+td {
+  padding: 1rem;
+  border-collapse: collapse;
+}
+
+.table-body {
+  background-color: rgba(43, 115, 171,0.3);
+  width: 95%;
+  max-height: calc(80%-0.8rem);
+  margin: 0.8rem auto;
+  border-radius: 0.6rem;
+  overflow: auto;
+}
+
+.table-body::-webkit-scrollbar {
+  width: 0.5rem;
+  height: 0.5rem;
+}
+
+.table-body::-webkit-scrollbar-thumb {
+  border-radius: 0.5rem;
+  background-color: #0004;
+  visibility: hidden;
+}
+
+.table-body:hover:-webkit-scrollbar-thumb {
+  visibility: visible;
+}
+
+thead th {
+  position: static;
+  top: 0;
+  left: 0;
+  background-color: rgba(3, 20, 65, 0.8);
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 0.8;
+  letter-spacing: 0.1em;
+  font-weight: 400;
+}
+
+tbody tr:nth-child(even){
+    background-color: rgba(11, 33, 72,0.3);
+}
+
+th {
+  color: #fff;
+}
+
+td {
+  color: #fff;
+}
+
+.table1 {
+  overflow: hidden;
+  background-color: transparent;
+}
+
+
+
+
+
+
+
+
+.userbtn {
+    position: relative;
+    background: #fff;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 0.8;
+    letter-spacing: 0.1em;
+    font-weight: 400;
+    padding: 5px 15px;
+    transition: 0.5s;
+    margin-right: 10px;
+  }
+  
+  .userbtn:hover {
+    background: var(--clr);
+    color: var(--clr);
+    /* letter-spacing: 0.25em; */
+    box-shadow: 8px 8px 35px var(--clr);
+  }
+
+  .userbtn:before{
+    content : '';
+    position: absolute;
+    inset: 2px;
+    background:#051a43;
+  }
+
+  .userbtn span{
+    position: relative;
+    z-index: 1;
+  }
+
+  .userbtn i{
+    position: absolute;
+    inset:0;
+    display: black;
+  }
+  .userbtn i::before{
+    content:'';
+    position: absolute;
+    top:0;
+    left:80%;
+    width: 10px;
+    height: 4px;
+    background: #27282c;
+    transform: translateX(-50%)skewX(325deg);
+    transition: 0.5s;
+  }
+  .userbtn:hover i::before{
+    width: 20px;
+    left:20%;
+  }
+
+
+  .userbtn i::after{
+    content:'';
+    position: absolute;
+    bottom:0;
+    left:20%;
+    width: 10px;
+    height: 4px;
+    background: #27282c;
+    transform: translateX(-50%)skewX(325deg);
+    transition: 0.5s;
+  }
+  .userbtn:hover i::after{
+    width: 20px;
+    left:80%;
+  }

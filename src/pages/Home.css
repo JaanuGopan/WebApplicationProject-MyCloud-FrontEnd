@@ -1,0 +1,109 @@
+.Homecustombackground {
+  background-image: url("../assets/iStock-1388013584-1-scaled.webp"); /* Replace with the path to your image */
+  background-size: cover; /* Adjust to your needs */
+  background-position: center; /* Adjust to your needs */
+  /* Other background properties can be added here */
+  height: 700px;
+  display: flexbox;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  filter: brightness(0.9);
+}
+
+.welcome-text{
+  color: white;
+}
+
+
+
+.myImage {
+  height: 60px;
+  width: 150px;
+  margin-left: 5px;
+}
+
+.bodytext {
+  color: #fff;
+  align-items: center;
+  background-color: #051a43;
+  border-radius: 10%;
+}
+
+
+
+
+.btn1 {
+    position: relative;
+    background: #fff;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1.5em;
+    letter-spacing: 0.1em;
+    font-weight: 400;
+    padding: 10px 30px;
+    transition: 0.5s;
+  }
+  
+  .btn1:hover {
+    background: #c8e4ff;
+    color: #c8e4ff;
+    letter-spacing: 0.25em;
+    box-shadow: 8px 8px 35px #fff;
+  }
+
+  .btn1:before{
+    content : '';
+    position: absolute;
+    inset: 2px;
+    background:#051a43;
+  }
+
+  .btn1 span{
+    position: relative;
+    z-index: 1;
+  }
+
+  .btn1 i{
+    position: absolute;
+    inset:0;
+    display: black;
+  }
+  .btn1 i::before{
+    content:'';
+    position: absolute;
+    top:0;
+    left:80%;
+    width: 10px;
+    height: 4px;
+    background: #27282c;
+    transform: translateX(-50%)skewX(325deg);
+    transition: 0.5s;
+  }
+  .btn1:hover i::before{
+    width: 20px;
+    left:20%;
+  }
+
+
+  .btn1 i::after{
+    content:'';
+    position: absolute;
+    bottom:0;
+    left:20%;
+    width: 10px;
+    height: 4px;
+    background: #27282c;
+    transform: translateX(-50%)skewX(325deg);
+    transition: 0.5s;
+  }
+  .btn1:hover i::after{
+    width: 20px;
+    left:80%;
+  }
+
+  .login{
+    flex-direction: column;
+    height: 120%;
+  }

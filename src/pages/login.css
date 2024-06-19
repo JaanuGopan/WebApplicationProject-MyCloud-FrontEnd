@@ -1,0 +1,59 @@
+.loginbackground {
+    background-image: url("../assets/iStock-1388013584-1-scaled.webp"); /* Replace with the path to your image */
+    background-size: cover; /* Adjust to your needs */
+    background-position: center; /* Adjust to your needs */
+    /* Other background properties can be added here */
+    background-size: cover;
+    height: 700px;
+    display: flexbox;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    filter: brightness(0.97);
+  }
+
+  .a-signup{
+    color: #fff;
+  }
+
+  p{
+    color:#fff
+  }
+
+  
+  .loginfield{
+      height: 20px;
+      align-items: center;
+      display: flex;
+      justify-content: center;
+      width: auto;
+      height: auto;
+      margin-top: 30px;
+  }
+  
+  .logininnerfield{
+      width: 300px;
+      height: auto;
+      margin: 20px;
+      padding: 30px;
+      background-color: transparent;
+      border: 2px solid rgba(255,255,255,0.2);
+      box-shadow: 0 0 10px rgba(0,0,0,0.2);
+      color: white;
+      text-decoration: none;
+      text-transform: uppercase;
+      font-size: 1.0;
+      letter-spacing: 0.1em;
+      font-weight: 400;
+  
+  }
+  
+  .logininnerfieldinput{
+      margin-bottom: 3px;
+  }
+  
+  .logininnerfieldbutton{
+      margin-top: 5px;
+      margin-bottom: 2px;
+      display: grid;
+  }
