@@ -3,6 +3,7 @@ import React, { useState, useEffect } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import "./Signup.css";
 import Navbarsignup from "../layout/Navbarsignup";
+import ApiConstant from "../api/ApiConstant";
 
 function SignUp() {
   let navigate = useNavigate();

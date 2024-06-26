@@ -3,6 +3,7 @@ import axios from "axios";
 import { Link, useParams, useNavigate } from "react-router-dom";
 import "./login.css";
 import Navbarlogin from "../layout/Navbarlogin";
+import { ApiConstant } from "../api/ApiConstant";
 
 function Login() {
   let navigate = useNavigate();
@@ -17,7 +18,7 @@ function Login() {
   }, []);
   const loadUsers = async () => {
     const result = await axios.get(
-      ApiConstant.baseUrl + "normaluserapi/normalusers"
+      `http://localhost:8081/normaluserapi/normalusers`
     );
     setusers(result.data);
   };

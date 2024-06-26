@@ -1,3 +1,6 @@
 class ApiConstant {
-  static baseUrl = "http://localhost:8081/";
+  static get baseUrl() {
+    return `http://localhost:8081/`;
+  }
 }
+export default ApiConstant;
