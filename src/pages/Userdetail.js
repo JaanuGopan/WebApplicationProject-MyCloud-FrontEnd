@@ -3,6 +3,7 @@ import Navbar from "../layout/Navbar";
 import { useNavigate, useParams } from "react-router-dom";
 import axios from "axios";
 import "../files/editfile.css";
+import ApiConstant from "../api/ApiConstant";
 
 export default function Userdetail() {
   let navigate = useNavigate();
