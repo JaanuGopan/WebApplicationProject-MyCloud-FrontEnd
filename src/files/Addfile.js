@@ -55,7 +55,7 @@ export default function Addfile() {
     if (files1.fileName === "") {
       alert("Please add the file..!");
     } else {
-      await axios.post("http://localhost:8080/fileapi/files", files1);
+      await axios.post(`${ApiConstant.baseUrl}fileapi/files`, files1);
       navigate(`/userpage/${id}`);
     }
   };

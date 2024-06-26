@@ -26,7 +26,7 @@ export default function Userdetail() {
   }, []);
   const loadUsers = async () => {
     const result = await axios.get(
-      `http://localhost:8080/normaluserapi/normalusers/${id}`
+      ApiConstant.baseUrl + `normaluserapi/normalusers/${id}`
     );
     setusers(result.data);
   };

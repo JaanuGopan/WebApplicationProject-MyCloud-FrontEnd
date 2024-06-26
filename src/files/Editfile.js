@@ -23,7 +23,7 @@ export default function Editfile() {
     loadFiles();
   }, []);
   const loadFiles = async () => {
-    const result = await axios.get(`http://localhost:8080/fileapi/files/${id}`);
+    const result = await axios.get(ApiConstant.baseUrl + `fileapi/files/${id}`);
     setFile(result.data);
   };
 
@@ -32,7 +32,7 @@ export default function Editfile() {
     if (files1.fileName === "") {
       alert("Please enter the file name..!");
     } else {
-      await axios.put("http://localhost:8080/fileapi/files", files1);
+      await axios.put(ApiConstant.baseUrl + "fileapi/files", files1);
       navigate(`/userpage/${files1.userID}`);
     }
   };

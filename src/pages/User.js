@@ -14,7 +14,7 @@ export default function User() {
   }, []);
   const loadFiles = async () => {
     const result = await axios.get(
-      `http://localhost:8080/fileapi/files/users/${id}`
+      ApiConstant.baseUrl + `fileapi/files/users/${id}`
     );
     setfiles(result.data);
   };

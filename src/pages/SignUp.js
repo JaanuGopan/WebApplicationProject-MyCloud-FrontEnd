@@ -28,7 +28,7 @@ function SignUp() {
   }, []);
   const loadusers = async () => {
     const result = await axios.get(
-      `http://localhost:8080/normaluserapi/normalusers`
+      ApiConstant.baseUrl + `normaluserapi/normalusers`
     );
     setallusers(result.data);
   };
@@ -55,7 +55,7 @@ function SignUp() {
       submit = false;
     }
     if (submit) {
-      await axios.post("http://localhost:8080/normaluserapi/normalusers", user);
+      await axios.post(ApiConstant.baseUrl + "normaluserapi/normalusers", user);
       navigate("/login");
     } else {
       alert("Invalid Input..!");

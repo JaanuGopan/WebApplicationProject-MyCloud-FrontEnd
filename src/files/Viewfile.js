@@ -1,4 +1,4 @@
-import React, { useState,useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import Navbar from "../layout/Navbar";
 import { Link, useNavigate, useParams } from "react-router-dom";
 import axios from "axios";
@@ -14,22 +14,19 @@ export default function Addfile() {
     fileSize: "",
     modifiedDate: "",
     userID: id,
-    imageUrl:"",
+    imageUrl: "",
   });
 
   useEffect(() => {
     loadFiles();
   }, []);
   const loadFiles = async () => {
-    const result = await axios.get(`http://localhost:8080/fileapi/files/${id}`);
+    const result = await axios.get(ApiConstant.baseUrl + `fileapi/files/${id}`);
     setFile(result.data);
   };
 
-
-
-
-  const { fileName, fileType, fileSize, modifiedDate, userID,imageUrl } = files1;
-
+  const { fileName, fileType, fileSize, modifiedDate, userID, imageUrl } =
+    files1;
 
   const customcolor2 = "#6eff3e";
 
@@ -42,7 +39,9 @@ export default function Addfile() {
             <h3>View File</h3>
             <form>
               <div>
-                { (fileType.split("/")[0]==="image") && imageUrl && <img src={imageUrl} width={60} height={40} alt=""/>}
+                {fileType.split("/")[0] === "image" && imageUrl && (
+                  <img src={imageUrl} width={60} height={40} alt="" />
+                )}
               </div>
               <nav className="addfileinnerfieldinput">
                 <label className="label-text" htmlFor="filename">
@@ -53,7 +52,6 @@ export default function Addfile() {
                   type="filename"
                   placeholder="filename"
                   value={fileName}
-                
                 />
               </nav>
               <nav className="addfileinnerfieldinput">
@@ -65,7 +63,6 @@ export default function Addfile() {
                   type="filetype"
                   placeholder="filetype"
                   value={fileType}
-              
                 />
               </nav>
               <nav className="addfileinnerfieldinput">
@@ -77,7 +74,6 @@ export default function Addfile() {
                   type="filesize"
                   placeholder="filesize"
                   value={fileSize}
-                 
                 />
               </nav>
               <nav className="addfileinnerfieldinput">
@@ -89,7 +85,6 @@ export default function Addfile() {
                   type="modifieddata"
                   placeholder="modified data"
                   value={modifiedDate}
-                  
                 />
               </nav>
             </form>
@@ -102,7 +97,9 @@ export default function Addfile() {
               <span>Back</span>
               <i></i>
             </Link>
-            <a className="openfile" href={imageUrl}>Open</a>
+            <a className="openfile" href={imageUrl}>
+              Open
+            </a>
           </form>
         </div>
       </div>
