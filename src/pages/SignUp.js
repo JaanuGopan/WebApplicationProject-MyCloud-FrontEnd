@@ -56,7 +56,7 @@ function SignUp() {
       submit = false;
     }
     if (submit) {
-      await axios.post(ApiConstant.baseUrl + "normaluserapi/normalusers", user);
+      await axios.post(ApiConstant.baseUrl + `normaluserapi/normalusers`, user);
       navigate("/login");
     } else {
       alert("Invalid Input..!");
