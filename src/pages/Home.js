@@ -13,7 +13,7 @@ function Home() {
       </div>
 
       <div className="login template d-flex justify-content-center align-items-center 100-w ">
-        <h3 className="bodytext">You Can signup Here..</h3>
+        <h3 className="bodytext">You Can signup Here...</h3>
 
         <Link to="/signup" className="btn1">
           <span>GetStart</span>
