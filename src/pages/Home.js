@@ -8,12 +8,12 @@ function Home() {
     <div className="Homecustombackground">
       <Navbarhome />
       <div className="d-flex justify-content-center align-items-center m-1">
-      <h3 className="welcome-text">Welcome To</h3>
+        <h3 className="welcome-text">Welcome To</h3>
         <img src={welcome} alt="Description of the image" className="myImage" />
       </div>
 
       <div className="login template d-flex justify-content-center align-items-center 100-w ">
-        <h3 className="bodytext">Are you new to MyCloud </h3>
+        <h3 className="bodytext">You Can Login Here</h3>
 
         <Link to="/signup" className="btn1">
           <span>GetStart</span>
