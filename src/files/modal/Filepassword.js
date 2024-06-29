@@ -3,6 +3,7 @@ import { Link, useNavigate, useParams } from "react-router-dom";
 import axios from "axios";
 import "./filepassword.css";
 import Navbarpass from "../../layout/Navbarpass";
+import ApiConstant from "../../api/ApiConstant";
 
 function Filepassword() {
   let navigate = useNavigate();
@@ -14,7 +15,7 @@ function Filepassword() {
     loadFiles();
   });
   const loadFiles = async () => {
-    const result = await axios.get(`http://localhost:8080/fileapi/files/${id}`);
+    const result = await axios.get(ApiConstant.baseUrl + `fileapi/files/${id}`);
     setFile(result.data);
   };
 
